@@ -1,0 +1,58 @@
+// Place all the styles related to the urls controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.bitly_index{
+
+padding-top: 5%;
+  background-color: rgb(224, 224, 224);
+    border-radius: 20px;
+}
+
+.contenido_d{
+border-radius: 20px;
+  background-color: #e7e8eb;
+
+}
+
+
+.fuente{
+  font-size: 1.2em;
+  font-family: serif;
+  font-weight: bold;
+  background-color: rgba(29, 93, 217, 0.58);
+  color: white;
+  border-radius: 4px;
+}
+table{
+
+  text-align: center;
+  // padding: 70px 50px 20px 300px;
+
+}
+
+table tr{
+  border: dashed 1px;
+
+}
+
+table td {
+  font-size: 1.1em;
+
+}
+
+.long_url{
+  background-color: rgba(162, 217, 159, 0.51);
+    border-radius: 4px;
+}
+.short_url{
+  background-color: rgba(162, 217, 159, 0.51);
+    border-radius: 4px;
+}
+.titulo{
+  text-align: center;
+  padding-bottom: 5%;
+  font-size: 60px;
+  color: rgb(18, 55, 75);
+  font-weight: bold;
+}

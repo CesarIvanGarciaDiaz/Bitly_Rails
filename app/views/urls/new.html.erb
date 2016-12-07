@@ -1,0 +1,25 @@
+    <div class="uk-container uk-container-center contenido_d ">
+<%= form_for :url, :url => { :action => :create } do |f| %>
+  <% if @url.errors.any? %>
+  <div id="errorExplanation">
+    <h2><%= pluralize(@url.errors.count, "error") %> prohibited
+    Error de la URL</h2>
+    <ul>
+    <% @url.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+  <% end %>
+
+  <p class="titulo">Ingresa tu <%= f.label :long_url %><br></p>
+    <p style="text-align:center;"><%= f.text_field :long_url %>
+  </p>
+
+
+  <p>
+    <%= f.submit :value => "Enviar", :class => 'uk-button uk-button-primary uk-width-large-1' %>
+  </p>
+<% end %>
+<%= link_to 'Back', "/urls/" ,:class => 'uk-button uk-button-success' %>
+</div>
