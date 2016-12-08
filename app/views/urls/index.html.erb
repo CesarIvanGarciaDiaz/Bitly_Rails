@@ -13,13 +13,13 @@
                 <td class="long_url"><%= url.long_url %></td>
                 <td class="long_url"><%= link_to url.short_url, "/urls/#{url.id}/#{url.short_url}",:class=> "uk-button" %></td>
                 <td class="long_url"><%= (url.visits) %></td>
-                <!-- <td><%= link_to 'Show', "/urls/show", :id => url.id ,:class=> "uk-button uk-button-primary" %></td> -->
-                <td class="uk-button uk-button-primary"><%= link_to 'Show', :action => :show, :id => url.id ,:class =>"uk-button uk-button-primary" %></td>
-<td class="uk-button uk-button-primary"><%= link_to 'Destroy', { :action => :destroy, :id => url.id }, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+                <td><%= link_to 'Show', :action=>:show, :id => url.id ,:class=> "uk-button uk-button-primary" %></td>
+                <!-- <td class="uk-button uk-button-primary"><%= link_to 'Show', :action => :show, :id => url.id ,:class =>"uk-button uk-button-primary" %></td> -->
+<!-- <td class="uk-button uk-button-primary"><%= link_to 'Destroy', { :action => :destroy, :id => url.id }, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td> -->
             </tr>
             <% end %>
         </table>
         <br>
-        <%= link_to 'New post', "urls/new" ,:class=> " uk-button uk-button-success uk-width-large-1-1"%>
+        <%= link_to 'New post', "/urls/new" ,:class=> " uk-button uk-button-success uk-width-large-1-1"%>
     </div>
 </div>
